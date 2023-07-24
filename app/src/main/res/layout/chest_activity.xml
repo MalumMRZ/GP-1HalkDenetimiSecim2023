@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/minusRecep"
+        android:onClick="minusRTE"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/baseline_arrow_downward_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKemal" />
+
+    <Button
+        android:id="@+id/plusRecep"
+        android:onClick="plusRTE"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/baseline_arrow_upward_24"
+        app:layout_constraintEnd_toStartOf="@+id/minusRecep"
+        app:layout_constraintStart_toEndOf="@+id/minusKemal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKemal" />
+
+    <EditText
+        android:id="@+id/editTextKemal"
+        android:layout_width="125dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="100"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextRecep"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageKemal" />
+
+    <ImageView
+        android:id="@+id/imageKemal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageRecep"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textKemal"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageRecep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRecep"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textKemal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="68dp"
+        android:text="Kemal Kılıçdaroğlu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textRecep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="52dp"
+        android:text="Recep Tayyip Erdoğan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRecep"
+        android:layout_width="127dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="100"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageRecep" />
+
+    <Button
+        android:id="@+id/plusKemal"
+        android:onClick="plusKK"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/baseline_arrow_upward_24"
+        app:layout_constraintEnd_toStartOf="@+id/minusKemal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRecep" />
+
+    <Button
+        android:id="@+id/minusKemal"
+        android:onClick="minusKK"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="236dp"
+        android:background="@drawable/baseline_arrow_downward_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRecep" />
+
+    <Button
+        android:id="@+id/editKemal"
+        android:onClick="editKemal"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/baseline_edit_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRecep" />
+
+    <Button
+        android:id="@+id/editErdogan"
+        android:onClick="editErdogan"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKemal" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:onClick="gobackChest"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="82dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/baseline_delete_24"
+        android:onClick="delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
